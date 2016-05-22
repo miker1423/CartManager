@@ -21,6 +21,10 @@ namespace CartManager.Implementation
         }
 
         #region Public Methods
+        /// <summary>
+        /// Deletes the object cotained in key ID
+        /// </summary>
+        /// <param name="Id">Key of the object</param>
         public async void Delete(string Id)
         {
             try
@@ -34,6 +38,11 @@ namespace CartManager.Implementation
             }
         }
 
+        /// <summary>
+        /// Retrives an object
+        /// </summary>
+        /// <param name="Id">Id of the key</param>
+        /// <returns>Object</returns>
         public async Task<T> Get(string Id)
         {
             try
@@ -47,7 +56,12 @@ namespace CartManager.Implementation
                 throw ex;
             }
         }
-
+        
+        /// <summary>
+        /// Sets an object to certain key
+        /// </summary>
+        /// <param name="obj">Object to be stored</param>
+        /// <param name="Id">Id that represents that object</param>
         public async void Set(T obj, string Id)
         {
             try
@@ -61,6 +75,11 @@ namespace CartManager.Implementation
             }
         }
 
+        /// <summary>
+        /// Updates an object
+        /// </summary>
+        /// <param name="obj">new object</param>
+        /// <param name="Id">Id of the object that needs to be updated</param>
         public async void Update(T obj, string Id)
         {
             try
