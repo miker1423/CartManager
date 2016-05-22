@@ -17,12 +17,13 @@ Then, where you want to use it just import the namespace CacheManager.Implementa
 ```C#
 using Microsoft.Extensions.Caching.Distributed;
 using CartManager.Implementation;
+using CartManager.Interfaces;
 
 namespace Example
 {
     public class Constructor
     {
-        private readonly _cart;
+        private readonly ICart _cart;
         public Constructor(IDistributedCache cache)
         {
             _cart = new Cart<YourClassToStore>(cache);
