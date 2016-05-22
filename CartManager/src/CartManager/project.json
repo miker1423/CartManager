@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Microsoft.Extensions.Caching.Redis": "1.0.0-rc2-final",
+    "NETStandard.Library": "1.5.0-rc2-24027"
+  },
+
+  "frameworks": {
+    "net4.5.1": {
+
+    }
+  }
+}
