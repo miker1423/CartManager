@@ -25,7 +25,7 @@ namespace CartManager.Implementation
         /// Deletes the object cotained in key ID
         /// </summary>
         /// <param name="Id">Key of the object</param>
-        public async void Delete(string Id)
+        public async Task Delete(string Id)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace CartManager.Implementation
         /// </summary>
         /// <param name="obj">Object to be stored</param>
         /// <param name="Id">Id that represents that object</param>
-        public async void Set(T obj, string Id)
+        public async Task Set(T obj, string Id)
         {
             try
             {
@@ -80,7 +80,7 @@ namespace CartManager.Implementation
         /// </summary>
         /// <param name="obj">new object</param>
         /// <param name="Id">Id of the object that needs to be updated</param>
-        public async void Update(T obj, string Id)
+        public async Task Update(T obj, string Id)
         {
             try
             {

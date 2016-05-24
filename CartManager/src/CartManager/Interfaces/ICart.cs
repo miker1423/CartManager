@@ -8,8 +8,8 @@ namespace CartManager.Interfaces
     public interface ICart<T>
     {
         Task<T> Get(string Id);
-        void Set(T obj, string Id);
-        void Update(T obj, string Id);
-        void Delete(string Id);
+        Task Set(T obj, string Id);
+        Task Update(T obj, string Id);
+        Task Delete(string Id);
     }
 }
